@@ -82,17 +82,27 @@ function HomePage() {
         </div>
       </div>
 
-      {deals.length > 0 && (
+{deals.length > 0 && (
         <div className="bg-white p-6 rounded-lg shadow-md mb-8">
           <h2 className="text-2xl font-semibold text-gray-700 mb-4">Your Recent Deals ({deals.length})</h2>
-          <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {deals.map((deal) => (
-              <li key={deal.id} className="bg-gray-50 p-4 rounded-lg shadow-sm">
-                <h3 className="text-lg font-semibold text-gray-800">{deal.title}</h3>
-                <p className="text-gray-600">Client: {deal.client}</p>
-                <p className="text-gray-600">Value: ${deal.value.toLocaleString()}</p>
-              </li>
-            ))}
+          <ul className="space-y-4">
+            {deals.map((deal, index) => {
+              // Log any malformed deal objects for debugging
+              if (!deal || typeof deal !== 'object') {
+                console.warn('Malformed deal object:', deal);
+                return null;
+              }
+              
+              return (
+                <li key={deal?.id || `deal-${index}`} className="bg-gray-50 p-4 rounded-lg shadow-sm">
+                  <h3 className="text-lg font-semibold text-gray-800">{deal?.title || 'Untitled Deal'}</h3>
+                  <p className="text-gray-600">Client: {deal?.client || 'Unknown Client'}</p>
+                  <p className="text-gray-600">
+                    Value: {deal?.value != null ? `$${deal.value.toLocaleString()}` : 'N/A'}
+                  </p>
+                </li>
+              );
+            })}
           </ul>
         </div>
       )}
