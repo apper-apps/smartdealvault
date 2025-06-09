@@ -27,12 +27,19 @@ export const routes = {
     icon: 'Grid3X3',
     component: Categories
   },
-  calendar: {
+calendar: {
     id: 'calendar',
     label: 'Calendar',
     path: '/calendar',
     icon: 'Calendar',
     component: Calendar
+  },
+  budget: {
+    id: 'budget',
+    label: 'Budget',
+    path: '/budget',
+    icon: 'PiggyBank',
+    component: () => import('@/pages/Budget').then(m => m.default)
   },
   deals: {
     id: 'deals',

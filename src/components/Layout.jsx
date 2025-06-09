@@ -10,9 +10,10 @@ const Layout = () => {
   const [isAddDealModalOpen, setIsAddDealModalOpen] = useState(false);
   const location = useLocation();
 
-  const navigationItems = [
+const navigationItems = [
     routes.dashboard,
     routes.categories,
+    routes.budget,
     routes.calendar,
     routes.deals
   ];
