@@ -1,10 +1,10 @@
+import React from 'react';
 import HomePage from '@/components/pages/HomePage';
 import Dashboard from '@/pages/Dashboard';
 import Categories from '@/pages/Categories';
 import Calendar from '@/pages/Calendar';
 import AllDeals from '@/pages/AllDeals';
 import NotFound from '@/pages/NotFound';
-
 export const routes = {
   home: {
     id: 'home',
@@ -26,8 +26,8 @@ export const routes = {
     path: '/categories',
     icon: 'Grid3X3',
     component: Categories
-  },
-calendar: {
+},
+  calendar: {
     id: 'calendar',
     label: 'Calendar',
     path: '/calendar',
@@ -39,7 +39,12 @@ calendar: {
     label: 'Budget',
     path: '/budget',
     icon: 'PiggyBank',
-    component: () => import('@/pages/Budget').then(m => m.default)
+    component: () => import('@/pages/Budget').then(m => m.default).catch(() => {
+      console.error('Failed to load Budget component');
+      return () => React.createElement('div', { 
+        className: 'p-6 text-center text-surface-600 dark:text-dark-600' 
+      }, 'Failed to load Budget page. Please try again.');
+    })
   },
   deals: {
     id: 'deals',
