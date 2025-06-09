@@ -10,6 +10,11 @@ export const dealService = {
     return [...deals];
   },
 
+  async getAllDeals() {
+    await delay(300);
+    return [...deals];
+  },
+
   async getById(id) {
     await delay(200);
     const deal = deals.find(d => d.id === id);
@@ -56,3 +61,6 @@ export const dealService = {
     return { ...deletedDeal };
   }
 };
+
+// Export as default for easier importing
+export default dealService;

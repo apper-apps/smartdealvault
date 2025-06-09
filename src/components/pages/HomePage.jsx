@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { toast } from 'react-toastify';
-import ApperIcon from '@/components/ApperIcon';
-import AddDealModal from '@/components/AddDealModal';
-import ContactForm from '@/components/organisms/ContactForm';
-import dealService from '@/services/api/dealService';
+import ApperIcon from '../ApperIcon';
+import AddDealModal from '../AddDealModal';
+import ContactForm from '../organisms/ContactForm';
+import dealService from '../../services/api/dealService';
 
 function HomePage() {
   const [showModal, setShowModal] = useState(false);
