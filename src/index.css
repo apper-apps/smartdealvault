@@ -5,12 +5,18 @@
 /* Import react-toastify CSS */
 @import 'react-toastify/dist/ReactToastify.css';
 
+/* CSS Custom Properties for Theme Transitions */
+:root {
+  --transition-theme: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* Ensure scrollbars are visible */
 body {
   overflow-y: auto;
   overflow-x: hidden;
   margin: 0;
   min-height: 100vh;
+  transition: var(--transition-theme);
 }
 
 /* Prevent horizontal overflow */
@@ -22,6 +28,40 @@ body {
 .main-content {
   overflow-y: auto;
   height: 100vh;
+}
+
+/* Theme transition classes */
+.theme-transition {
+  transition: var(--transition-theme);
+}
+
+/* Dark theme scrollbar styles */
+.dark {
+  color-scheme: dark;
+}
+
+.dark::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dark::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+.dark::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 4px;
+}
+
+.dark::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Toast customization for dark mode */
+.dark .Toastify__toast-container {
+  --toastify-color-light: #1e293b;
+  --toastify-color-dark: #0f172a;
+  --toastify-text-color-light: #f1f5f9;
 }
 
 @layer utilities {
