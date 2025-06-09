@@ -1,9 +1,9 @@
-import Home from '../pages/Home';
-import Dashboard from '../pages/Dashboard';
-import Categories from '../pages/Categories';
-import Calendar from '../pages/Calendar';
-import AllDeals from '../pages/AllDeals';
-import NotFound from '../pages/NotFound';
+import HomePage from '@/components/pages/HomePage';
+import Dashboard from '@/pages/Dashboard';
+import Categories from '@/pages/Categories';
+import Calendar from '@/pages/Calendar';
+import AllDeals from '@/pages/AllDeals';
+import NotFound from '@/pages/NotFound';
 
 export const routes = {
   home: {
@@ -11,7 +11,7 @@ export const routes = {
     label: 'Home',
     path: '/',
     icon: 'Home',
-    component: Home
+    component: HomePage
   },
   dashboard: {
     id: 'dashboard',
