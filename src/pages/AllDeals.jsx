@@ -343,9 +343,9 @@ const AllDeals = () => {
                       >
                         <ApperIcon name="Trash2" size={16} />
                       </motion.button>
-                    </div>
+</div>
                   </td>
-                </tr>
+                </motion.tr>
               ))}
             </tbody>
           </table>
