@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "name": "Canva Pro Lifetime Deal",
+    "amount": 89.99,
+    "purchaseDate": "2024-01-15",
+    "seller": "AppSumo",
+    "category": "Design Tools",
+    "tags": ["design", "graphics", "templates"],
+    "notes": "Excellent design tool with thousands of templates. Great for social media graphics and presentations.",
+    "createdAt": "2024-01-15T10:30:00Z",
+    "updatedAt": "2024-01-15T10:30:00Z"
+  },
+  {
+    "id": "2", 
+    "name": "ConvertKit Email Marketing Suite",
+    "amount": 149.00,
+    "purchaseDate": "2024-01-22",
+    "seller": "StackSocial",
+    "category": "Marketing",
+    "tags": ["email", "marketing", "automation"],
+    "notes": "Powerful email marketing platform with advanced automation features. Perfect for building subscriber lists.",
+    "createdAt": "2024-01-22T14:20:00Z",
+    "updatedAt": "2024-01-22T14:20:00Z"
+  },
+  {
+    "id": "3",
+    "name": "Notion Pro Workspace",
+    "amount": 59.99,
+    "purchaseDate": "2024-02-05",
+    "seller": "Prime Club",
+    "category": "Productivity",
+    "tags": ["notes", "organization", "workspace"],
+    "notes": "All-in-one workspace for notes, tasks, and project management. Highly customizable and versatile.",
+    "createdAt": "2024-02-05T09:15:00Z",
+    "updatedAt": "2024-02-05T09:15:00Z"
+  },
+  {
+    "id": "4",
+    "name": "GitHub Copilot Developer Tools",
+    "amount": 199.99,
+    "purchaseDate": "2024-02-12",
+    "seller": "PitchGround",
+    "category": "Development",
+    "tags": ["coding", "AI", "developer tools"],
+    "notes": "AI-powered coding assistant that significantly speeds up development. Great for multiple programming languages.",
+    "createdAt": "2024-02-12T16:45:00Z",
+    "updatedAt": "2024-02-12T16:45:00Z"
+  },
+  {
+    "id": "5",
+    "name": "SEMrush SEO Toolkit",
+    "amount": 299.00,
+    "purchaseDate": "2024-02-28",
+    "seller": "SaaS Mantra",
+    "category": "Marketing",
+    "tags": ["SEO", "analytics", "keyword research"],
+    "notes": "Comprehensive SEO and digital marketing toolkit. Essential for website optimization and competitor analysis.",
+    "createdAt": "2024-02-28T11:30:00Z",
+    "updatedAt": "2024-02-28T11:30:00Z"
+  }
+]
